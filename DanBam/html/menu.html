@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"> <img src="asset/LOGO_DANBAM.jpg"  alt=""></a>
+        <input class="navbtn" id="navbtn" type="checkbox" >
+        <label class="navicon" for="navbtn"><span class="bar"></span></label>
+        <ul class="navlist">
+            <li>
+                <a id="active" href="index.html">Back </a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="location.html">Location</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        
+    </header>
+    <div class="slideshow">
+        <div class="slides">
+            <div>
+                <img class="imglist active" id="first" src="asset/bibimbap_promo.jpg" alt="">
+                <img class="imglist" src="asset/Haejang-guk_promo.jpg" alt="">
+                <img class="imglist" src="asset/sundubu_promo.jpg" alt="">
+                <img class="imglist" id="last" src="asset/soju_promo.jpg" alt="">
+            </div>
+            <button class="leftbtn" onclick="changeSlide(-1)">&#10094</button>
+            <button class="rightbtn" onclick="changeSlide(1)">&#10095</button>
+        </div>
+    </div>    
+    <h1 class="titlemenu">FOOD</h1>
+    <div class="menu">
+        <div class="product">
+            <img  src="asset/makanan/bibimbap.jpg">
+            <p>Bibimbap</p>
+            <p>Rp 42.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/makanan/Haejang-guk.jpg">
+            <p>Haejangguk</p>
+            <p>Rp 22.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/makanan/japchae.jpg">
+            <p>Japchae</p>
+            <p>Rp 48.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/makanan/sundubu.jpg">
+            <p>Sundubujjigae</p>
+            <p>Rp 30.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/makanan/tteokbokki.jpg">
+            <p>Tteokbokki</p>
+            <p>Rp 20.000</p>
+        </div>
+    </div>
+    <button class="orderbtn">Order</button>
+    <h1 class="titlemenu">DESSERT</h1>
+    <div class="menu">
+        <div class="product">
+            <img src="asset/dessert/bukkumi.jpg">
+            <p>Bukkumi</p>
+            <p>Rp 10.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/dessert/dasik.jpg">
+            <p>Dasik</p>
+            <p>Rp 15.000</p>
+        </div>
+        <div class="product">
+             <img src="asset/dessert/yakgwa.jpg">
+             <p>Yakgwa</p>
+             <p>Rp 25.000</p>
+        </div>
+        <div class="product">
+             <img src="asset/dessert/hotteok.jpg">
+             <p>Hotteok</p>
+             <p>Rp 15.000</p>
+          </div>
+          <div class="product">
+            <img src="asset/dessert/yaksik.jpg">
+            <p>Yaksik</p>
+            <p>Rp 10.000</p>
+          </div>
+    </div>
+    <button class="orderbtn">Order</button>
+    <h1 class="titlemenu">DRINK</h1>
+    <div class="menu">
+        <div class="product">
+          <img src="asset/minum/Baekseju.png">
+          <p>Baekseju</p>
+          <p>Rp 10.000</p>
+        </div>
+        <div class="product">
+          <img src="asset/minum/bokbunja.jpg">
+          <p>Bokbunja</p>
+          <p>Rp 20.000</p>
+        </div>
+        <div class="product">
+          <img src="asset/minum/omija tea.jpg">
+          <p>Omija tea</p>
+          <p>Rp 8.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/minum/Sikhye.jpg">
+            <p>Sikhye</p>
+            <p>Rp 6.000</p>
+        </div>
+        <div class="product">
+            <img src="asset/minum/soju.jpg">
+            <p>Soju</p>
+            <p>Rp 40.000</p>
+        </div>
+    </div>
+    <button class="orderbtn">Order</button>
+    <br>
+    <footer>
+         <center>&copyCopyright 2020 by DanBam</center>
+    </footer>
+</body>
+<script src="menu.js"></script>
+</html>

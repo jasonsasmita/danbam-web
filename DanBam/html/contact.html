@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"> <img src="asset/LOGO_DANBAM.jpg"  alt=""></a>
+        <input class="navbtn" id="navbtn" type="checkbox" >
+        <label class="navicon" for="navbtn"><span class="bar"></span></label>
+        <ul class="navlist">
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="location.html">Location</a>
+            </li>
+            <li>
+                <a id="active" href="index.html">Back </a>
+            </li>
+
+        </ul>
+        
+    </header>
+    <div class="contact">
+        <form id="contactForm">
+            <div class="row">
+                <div class="leftcol">
+                    <label for="name">Name    :</label>
+                </div>
+                <div class="rightcol">
+                    <input type="text" id="name" name="name" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="leftcol">
+                    <label for="email">Email  :</label>
+                </div>
+                <div class="rightcol">
+                    <input type="text" id="email" name="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="leftcol">
+                    <label for="fname">Gender :</label>
+                </div>
+                <div class="rightcol">
+                    <input type="radio" class="gender" id="genderMale" name="genders" value="male">Male
+                    <input type="radio" class="gender" id="genderFemale" name="genders" value="female">Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="leftcol">
+                    <label for="country">Branch :</label>
+                </div>
+                <div class="rightcol">
+                    <select id="locationlist" name="locationlist">
+                        <option value="" >Choose DanBam's branch location</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="southkorea">South Korea</option>
+                        <option value="vietnam">Vietnam</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="leftcol">
+                    <label for="message">Message :</label>
+                </div>
+                <div class="rightcol">
+                    <textarea id="message" name="message" placeholder="Write here"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rightcol">
+                    <input type="checkbox" id="agree" name="agree" value="accept">Do you want to receive our latest information?
+                </div>
+            </div>
+            <div class="row">
+                <button id="submit">Submit</button>
+            </div>
+            </form>
+      </div>
+    
+    <footer>
+         <center>&copyCopyright 2020 by DanBam</center>
+    </footer>
+    
+    
+</body>
+<script src="contact.js"></script>
+</html>
